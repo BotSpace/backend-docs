@@ -1,0 +1,30 @@
+meta {
+  name: export example
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/api/collection/users/export-excel/
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "users",
+    "project": 19,
+    "fields": [
+      {
+        "name": "first_name",
+        "required": true,
+        "type": "text"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,25 @@
+meta {
+  name: plan
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/api/project/19/plan/
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Test",
+    "debug": {
+      "flow": ["dsds"]
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

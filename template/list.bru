@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/template/?search=f
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: f
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

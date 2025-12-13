@@ -1,0 +1,27 @@
+meta {
+  name: detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/enviroment/RELEASE_BOT_TOKEN/?project=19
+  body: none
+  auth: inherit
+}
+
+params:query {
+  project: 19
+}
+
+body:json {
+  {
+    "key": "BOT_TOKEN",
+    "value": "salom",
+    "project": 19
+  }
+}
+
+settings {
+  encodeUrl: true
+}

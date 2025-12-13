@@ -1,0 +1,32 @@
+meta {
+  name: update-data
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/collection/1/query/?action=update
+  body: json
+  auth: inherit
+}
+
+params:query {
+  action: update
+}
+
+body:json {
+  {
+    "where": {
+      "name": "Olim"
+    },
+    "data": {
+      "$set": {
+        "name": "Samandar" 
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

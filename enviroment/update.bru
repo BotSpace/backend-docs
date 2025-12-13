@@ -1,0 +1,26 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/api/enviroment/BOT_TOKEN/?project=1
+  body: json
+  auth: inherit
+}
+
+params:query {
+  project: 1
+}
+
+body:json {
+  {
+    "value": "6317984983:AAGrD1o6IMlYy99cfujcAk9jQ3hNphfJp0k"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

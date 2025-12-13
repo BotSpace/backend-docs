@@ -1,0 +1,23 @@
+meta {
+  name: detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/relase/23/
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "key": "BOT_TOKEN",
+    "value": "salom",
+    "project": 19
+  }
+}
+
+settings {
+  encodeUrl: true
+}

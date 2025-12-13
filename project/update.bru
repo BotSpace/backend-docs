@@ -1,0 +1,368 @@
+meta {
+  name: update
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{baseUrl}}/api/project/15/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "flow": {
+      "edges": [
+        {
+          "id": "reactflow__edge-node_1763719776939_1source-handler-node_1763719802895_2target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719776939_1",
+          "target": "node_1763719802895_2",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719802895_2source-handler-node_1763719816643_3target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719802895_2",
+          "target": "node_1763719816643_3",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719816643_3source-handler-node_1763719829962_4target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719816643_3",
+          "target": "node_1763719829962_4",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719816643_3source-handler-node_1763720496877_0target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719816643_3",
+          "target": "node_1763720496877_0",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719829962_4source-handler-node_1763720533946_1target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719829962_4",
+          "target": "node_1763720533946_1",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719829962_4source-handler-node_1763720537945_2target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719829962_4",
+          "target": "node_1763720537945_2",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        },
+        {
+          "id": "reactflow__edge-node_1763719816643_3source-handler-node_1763724179565_0target-handler",
+          "type": "step",
+          "style": {
+            "stroke": "#495057",
+            "strokeWidth": 1.5
+          },
+          "source": "node_1763719816643_3",
+          "target": "node_1763724179565_0",
+          "animated": false,
+          "markerEnd": {
+            "type": "arrow",
+            "color": "#495057",
+            "width": 30,
+            "height": 30
+          },
+          "sourceHandle": "source-handler",
+          "targetHandle": "target-handler"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "node_1763719776939_1",
+          "data": {
+            "global": true,
+            "command": "/start",
+            "context": {},
+            "node_type": "CommandTriggerNode"
+          },
+          "type": "CommandTriggerNode",
+          "width": 320,
+          "height": 236,
+          "dragging": false,
+          "position": {
+            "x": 415.52421661548897,
+            "y": -9.329896954108762
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 415.52421661548897,
+            "y": -9.329896954108762
+          }
+        },
+        {
+          "id": "node_1763719802895_2",
+          "data": {
+            "keyboard": {
+              "reply": [],
+              "active": "inline",
+              "inline": []
+            },
+            "parseMode": "None",
+            "recipients": {
+              "sendToSender": true,
+              "additionalIds": []
+            },
+            "messageText": "👤 Ismingizni kiriting:"
+          },
+          "type": "SendTextMessageNode",
+          "width": 400,
+          "height": 499,
+          "dragging": false,
+          "position": {
+            "x": 376.3154817955442,
+            "y": 383.9871806179272
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 376.3154817955442,
+            "y": 383.9871806179272
+          }
+        },
+        {
+          "id": "node_1763719816643_3",
+          "data": {
+            "type": "text",
+            "filter": "any",
+            "global": false,
+            "context": {},
+            "node_type": "MessageTriggerNode"
+          },
+          "type": "MessageTriggerNode",
+          "width": 320,
+          "height": 292,
+          "dragging": false,
+          "position": {
+            "x": 415.70263903337343,
+            "y": 1049.192502856821
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 415.70263903337343,
+            "y": 1049.192502856821
+          }
+        },
+        {
+          "id": "node_1763719829962_4",
+          "data": {
+            "keyboard": {
+              "reply": [],
+              "active": "inline",
+              "inline": [
+                [
+                  {
+                    "id": "btn-1763719846139",
+                    "text": "Yangi buyurtma",
+                    "type": "callback",
+                    "value": "new_order"
+                  }
+                ]
+              ]
+            },
+            "parseMode": "None",
+            "recipients": {
+              "sendToSender": true,
+              "additionalIds": []
+            },
+            "messageText": "🏠 Xush kelibsiz! Quyidagi menyu orqali yangi buyurtma berishingiz mumkin."
+          },
+          "type": "SendTextMessageNode",
+          "width": 400,
+          "height": 499,
+          "dragging": false,
+          "position": {
+            "x": 376.0859804164703,
+            "y": 1431.312031096948
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 376.0859804164703,
+            "y": 1431.312031096948
+          }
+        },
+        {
+          "id": "node_1763720496877_0",
+          "data": {
+            "key": "first_name",
+            "type": "text",
+            "node_type": "StateNode"
+          },
+          "type": "StateNode",
+          "width": 320,
+          "height": 292,
+          "dragging": false,
+          "position": {
+            "x": 920.2459647097774,
+            "y": 1436.0216928081668
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 920.2459647097774,
+            "y": 1436.0216928081668
+          }
+        },
+        {
+          "id": "node_1763720533946_1",
+          "data": {
+            "fieldMappings": {
+              "chat_id": "chat_id",
+              "last_name": "first_name",
+              "created_at": "2025-01-01T00:00:00Z",
+              "first_name": "first_name"
+            },
+            "collection_name": "users"
+          },
+          "type": "CollectionNode",
+          "width": 600,
+          "height": 672,
+          "dragging": false,
+          "position": {
+            "x": 857.6348560829258,
+            "y": 2139.56769015257
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 857.6348560829258,
+            "y": 2139.56769015257
+          }
+        },
+        {
+          "id": "node_1763720537945_2",
+          "data": {
+            "keyboard": {
+              "reply": [],
+              "active": "inline",
+              "inline": []
+            },
+            "parseMode": "None",
+            "recipients": {
+              "sendToSender": true,
+              "additionalIds": []
+            },
+            "messageText": "Malumot saqlandi bratishka"
+          },
+          "type": "SendTextMessageNode",
+          "width": 400,
+          "height": 499,
+          "dragging": false,
+          "position": {
+            "x": 34.34015971401175,
+            "y": 2142.659162381806
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 34.34015971401175,
+            "y": 2142.659162381806
+          }
+        },
+        {
+          "id": "node_1763724179565_0",
+          "data": {
+            "key": "chat_id",
+            "type": "user_id",
+            "node_type": "StateNode"
+          },
+          "type": "StateNode",
+          "width": 320,
+          "height": 292,
+          "dragging": false,
+          "position": {
+            "x": 1352.1431697218807,
+            "y": 1429.5756114148767
+          },
+          "selected": false,
+          "positionAbsolute": {
+            "x": 1352.1431697218807,
+            "y": 1429.5756114148767
+          }
+        }
+      ]
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

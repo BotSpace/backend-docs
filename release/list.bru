@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/relase/?project=14
+  body: none
+  auth: inherit
+}
+
+params:query {
+  project: 14
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

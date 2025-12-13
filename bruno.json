@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "botmother",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

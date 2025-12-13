@@ -1,0 +1,16 @@
+meta {
+  name: dashboard
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/project/11/dashboard/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

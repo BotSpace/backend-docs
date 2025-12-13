@@ -1,0 +1,32 @@
+meta {
+  name: send message
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/chat/send-message/20/
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "chat_id": "1769851684",
+    "message": "salom",
+    "file": "text",
+    "message_type": "text"
+  }
+}
+
+body:multipart-form {
+  chat_id: 1769851684
+  message: salom
+  message_type: text
+  ~file: @file(/Users/uzmacbook/Desktop/Screenshot 2025-12-05 at 12.48.09 AM.png)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

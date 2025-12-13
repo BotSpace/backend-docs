@@ -1,0 +1,24 @@
+meta {
+  name: stop
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/relase/11/stop/
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "key": "BOT_TOKEN",
+    "value": "salom",
+    "project": 19
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,37 @@
+meta {
+  name: insert-data
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/api/collection/users/query/?action=insert&project=20
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  action: insert
+  project: 20
+}
+
+body:json {
+  {
+    "first_name": "olim",
+    "last_name": "nomalum",
+    "chat_id": 1
+  }
+}
+
+body:multipart-form {
+  chat_id: 1769851684
+  first_name: Samandar
+  last_name: Azamov
+  created_at: 2025-10-10
+  avatar: e4e1699b-f1e6-4853-bf02-821541ae998d
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

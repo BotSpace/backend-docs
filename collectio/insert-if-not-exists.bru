@@ -1,0 +1,33 @@
+meta {
+  name: insert-if-not-exists
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/api/collection/users/query/?action=insert_if_not_exists&project=11
+  body: json
+  auth: inherit
+}
+
+params:query {
+  action: insert_if_not_exists
+  project: 11
+}
+
+body:json {
+  {
+    "where": {"chat_id": 20},
+    "data": {
+      "first_name": "olim",
+      "last_name": "nomalum",
+      "chat_id": 20,
+      "created_at": "2025-09-23"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

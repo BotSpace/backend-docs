@@ -1,0 +1,22 @@
+meta {
+  name: read message
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/chat/mark-read/20/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "chat_id": "1234"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

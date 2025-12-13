@@ -1,0 +1,21 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/file/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(/Users/uzmacbook/Downloads/-2147483648_-210128.webp)
+  project: 19
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

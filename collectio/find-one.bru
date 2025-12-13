@@ -1,0 +1,31 @@
+meta {
+  name: find-one
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/api/collection/users/query/?action=find_one&project=18
+  body: json
+  auth: inherit
+}
+
+params:query {
+  action: find_one
+  project: 18
+}
+
+body:json {
+  {
+    "where": {
+      "_id": {
+        "$oid": "69289872498017b1522c4411"
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

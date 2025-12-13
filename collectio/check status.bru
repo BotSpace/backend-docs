@@ -1,0 +1,30 @@
+meta {
+  name: check status
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/api/collection/export-status/24fb0d33-7b16-4a6d-afec-b00e010f6e14/
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "users",
+    "project": 19,
+    "fields": [
+      {
+        "name": "first_name",
+        "required": true,
+        "type": "text"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

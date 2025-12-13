@@ -1,0 +1,18 @@
+meta {
+  name: logs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/sse/api/project/3/logs/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

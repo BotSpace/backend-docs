@@ -1,0 +1,31 @@
+meta {
+  name: send-message
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/message/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "caption": "salom",
+    "project": 1,
+    "buttons": [
+      {
+        "title": "Salom",
+        "callback_data": "salom",
+        "request_contact": true,
+        "request_location": true
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

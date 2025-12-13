@@ -1,0 +1,16 @@
+meta {
+  name: debug
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/project/15/debug/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

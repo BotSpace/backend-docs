@@ -1,0 +1,21 @@
+meta {
+  name: events
+  type: ws
+  seq: 7
+}
+
+ws {
+  url: {{WS_BASE_URL}}/events/?token={{token}}
+  body: ws
+  auth: inherit
+}
+
+body:ws {
+  name: message 1
+  type: json
+  content: '''
+    {
+      "message": "salom"
+    }
+  '''
+}

@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/file/?filetype=file
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filetype: file
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

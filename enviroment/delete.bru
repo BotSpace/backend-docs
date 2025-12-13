@@ -1,0 +1,27 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/api/enviroment/2/?project=19
+  body: none
+  auth: inherit
+}
+
+params:query {
+  project: 19
+}
+
+body:json {
+  {
+    "key": "BOT_TOKEN",
+    "value": "salom",
+    "project": 19
+  }
+}
+
+settings {
+  encodeUrl: true
+}
