@@ -20,3 +20,51 @@ body:json {
 script:post-response {
   bru.setEnvVar("token",res.getBody()['access'])
 }
+
+example {
+  name: example
+  
+  request: {
+    url: {{baseUrl}}/auth/token/
+    method: POST
+    mode: json
+    body:json: {
+      {
+        "phone": "{{phone}}",
+        "password": "{{password}}"
+      }
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx/1.24.0 (Ubuntu)
+      date: Sat, 13 Dec 2025 07:01:23 GMT
+      content-type: application/json
+      content-length: 483
+      connection: keep-alive
+      vary: Accept, Accept-Language, origin
+      allow: POST, OPTIONS
+      x-frame-options: DENY
+      content-language: uz
+      x-content-type-options: nosniff
+      referrer-policy: same-origin
+      cross-origin-opener-policy: same-origin
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2ODIwMTI4MywiaWF0IjoxNzY1NjA5MjgzLCJqdGkiOiJjMmEyOGQ0OGQyMzc0YWYyYjljNzJkY2E2N2EzOWRlMCIsInVzZXJfaWQiOjJ9.6BGYFN2xFyA3jjtRBLk-bXnBaaCADtDLDJkB042GMFc",
+          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NjEyODgzLCJpYXQiOjE3NjU2MDkyODMsImp0aSI6IjA0OWM0MGZiNGU4MTQwOWRhMDRmZjM5MjMzYjc5MWYwIiwidXNlcl9pZCI6Mn0.79J6CDi0KGwj7CsotFwq3CFr5iX-N2LrnKA7qk8evps"
+        }
+      '''
+    }
+  }
+}
